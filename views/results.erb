@@ -1,0 +1,29 @@
+  <body>
+    <head>
+      <style>
+        body{
+          text-align:center;
+          font-family: Arial, Helvetica, sans-serif;
+          background-color: gray;
+          }
+          pre{
+            letter-spacing: 0px;
+          }
+          label{
+            font-size: 20px;
+          }
+      </style>
+    </head>
+    <h1>Image to ASCII art generator</h1> <br>
+
+    <form action="/results">
+      <label for="imageURL"> Enter an image URL </label> <br> <br>
+      <input  id="imageURL" name="image" text="text" >
+      <button>Submit</button>
+    </form>
+
+  <pre>
+    <%= @art%>
+  </pre>
+
+  </body>
