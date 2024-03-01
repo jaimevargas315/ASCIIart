@@ -2,7 +2,7 @@
 
 Use this repository to create new ASCII art from image links. 
 
-## This only works with DIRECT image links
+### This only works with DIRECT image links
 
 For example...
 
