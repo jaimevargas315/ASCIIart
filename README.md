@@ -1,18 +1,12 @@
-# sinatra-template
+# ASCII Art Generator
 
-Use this repository to create new Sinatra apps. 
+Use this repository to create new ASCII art from image links. 
 
-Optionally, to use `ActiveRecord` for database operations, add to the `app.rb`:
+**This only works with DIRECT image links**
+For example 
+https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/800px-Firefox_logo%2C_2019.svg.png``
+will work 
+``https://en.wikipedia.org/wiki/Firefox``
+will NOT work
 
-```ruby
-require "sinatra/activerecord"
-```
-
-And in the `config/environment.rb` file add this code block:
-
-```ruby
-configure do
-  # setup a database connection
-  set(:database, { adapter: "sqlite3", database: "db/development.sqlite3" })
-end
-```
+Simply copy+paste a direct image link into the textbox and click submit, the art will be generated and displayed.
