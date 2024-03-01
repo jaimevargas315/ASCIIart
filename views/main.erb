@@ -4,11 +4,12 @@
         body{
           text-align:center;
           font-family: Arial, Helvetica, sans-serif;
-          background-color: gray;
+          background: rgb(0,13,191);
+          background: linear-gradient(90deg, rgba(0,13,191,1) 13%, rgba(0,241,255,1) 71%, rgba(255,255,255,1) 98%); 
           }
           pre{
             letter-spacing: 0px;
-          }
+            background-color: gray 50%%;      }
           label{
             font-size: 20px;
             background-color : white;
@@ -17,13 +18,37 @@
           h1{
             background-color : white;
             border-radius: 25px;
+            margin-left:25%;
+            margin-right: 25%;
+            
+          }
+          button{
+            background-color: black;
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight:bold;
+            padding: 16px 32px;
+            font-size: 15px;
+            cursor:pointer;
+            transition-duration:0.4s;
+            border-radius:10px;
+          }
+          button:hover{
+            background-color: white;
+            color:black;
+          }
+          input{
+            height:40px;
+            width:400px;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
           }
       </style>
     </head>
     <h1>Image to ASCII art generator</h1> <br>
 
     <form action="/results">
-      <label for="imageURL"> Enter an image URL </label> <br> <br>
+      <label for="imageURL"> Enter an image URL </label> <br>
       <input  id="imageURL" name="image" text="text" >
       <button>Submit</button>
     </form>
